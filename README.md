@@ -42,7 +42,7 @@ You can download the model weights used in the paper [here](https://drive.google
 
 ## Configuration
 
-Configuration management for HYDRA is done through multiple .yml files located in the `configs/` directory.  
+Configuration management for MDgen is done through multiple .yml files located in the `configs/` directory.  
 - `train.yml` specifies the parameters for training the diffusion model along with path to the processed dataset.
 - `sample.yml` specifies parameters for sampling, including the number of peptides to sample for each target receptor and model weights to load.
 - `reconstruct.yml` specifies the reconstruction algorithm as well as its hyperparameters.
@@ -51,7 +51,7 @@ These configurations might have to be modified to point to the dataset and check
 
 ## Training
 
-To train HYDRA, run:
+To train MDgen, run:
 
 ```train
 python3 scripts/train.py configs/train.yml
@@ -62,7 +62,7 @@ The parameter `--ckpt` can be used to resume training from an existing checkpoin
 
 ## Evaluation
 
-Evaluating HYDRA must be done in two stages: 
+Evaluating MDgen must be done in two stages: 
 1. Sampling residues based on the target receptor.
 2. Reconstructing generated residues into peptides.
 
