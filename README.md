@@ -1,6 +1,8 @@
 # HYDRA
 
-This repository is the official implementation of the paper **"MD simulation "**.
+This repository is the official implementation of the paper **"Enhanced Transformer-Based Sampling for
+Long-Range Molecular Dynamics Trajectory
+Generation"**.
 
 <p align="center">
   <img src="architecture (1).png">
