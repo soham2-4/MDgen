@@ -19,7 +19,7 @@ conda env create -f environment.yml
 
 Activate the environment:
 ```setup
-conda activate HYDRA
+conda activate MDgen
 ```
 
 ## Data
