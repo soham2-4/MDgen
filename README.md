@@ -1,4 +1,4 @@
-# HYDRA
+# MDgen
 
 This repository is the official implementation of the paper **"Enhanced Transformer-Based Sampling for
 Long-Range Molecular Dynamics Trajectory
