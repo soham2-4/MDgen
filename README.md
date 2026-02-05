@@ -3,7 +3,7 @@
 This repository is the official implementation of the paper **"MD simulation "**.
 
 <p align="center">
-  <img src="assets/architecture (1).png">
+  <img src="architecture (1).png">
 </p>
 
 ## Requirements
