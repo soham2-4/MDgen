@@ -69,12 +69,12 @@ Raw Data () training data can be found in ''.
 
 To generate synthetic data, run:
 
-```train
+```
 python data.py
-
+```
 To train MDgen, run:
 
-```train
+```
 python3 trans1.py
 ```
 
