@@ -32,29 +32,23 @@ Matplotlib
 
 It is recommended to use a virtual environment (e.g., Conda).. A virtual environment manager such as [Conda](https://conda.io/projects/conda/en/latest/user-guide/getting-started.html) is recommended.
 
-Install dependencies:
-```setup
-conda env create -f environment.yml
-```
+## Creat environment:
+conda create -n mdtraj python=3.8
+conda activate mdtraj
+pip install torch numpy matplotlib
 
-Activate the environment:
-```setup
-conda activate MDgen
-```
+## Project overview
+Each system directory contains:
 
-## Data
+Raw MD trajectory data
 
-The model was trained on `release-2020-03-18` of [PepBDB](http://huanglab.phys.hust.edu.cn/pepbdb/db/download/).  
-It can be obtained by running:
-```
-wget http://huanglab.phys.hust.edu.cn/pepbdb/db/download/pepbdb-20200318.tgz
-```
+data.py → synthetic data generation (noise augmentation)
 
-Scripts to clean and preprocess the dataset for usage with HYDRA is provided in the `utils/datasets/` directory and can be used as follows:
-```
-python3 utils/datasets/clean_pepbdb.py --source /path/to/pepbdb --dest /path/to/pepbdb --n_atom_thr 200
-python3 utils/datasets/process_pepbdb.py --source /path/to/pepbdb --dest /path/to/pepbdb_natoms200_pocket10 --radius 10
-```
+trans1.py → Transformer model training
+
+inference1.py or inference2.py → trajectory generation
+
+The workflow is similar across systems, with minor differences in file names and data formats.
 
 ## Pre-trained Model Checkpoint
 
