@@ -20,7 +20,17 @@ The framework currently supports three systems:
 
 ## Requirements
 
-HYDRA was developed using PyTorch 1.13.1 on Python 3.8.18 which remain the preferred versions to reproduce the code. A virtual environment manager such as [Conda](https://conda.io/projects/conda/en/latest/user-guide/getting-started.html) is recommended.
+This project was developed using:
+
+Python ≥ 3.8
+
+PyTorch ≥ 1.13
+
+NumPy
+
+Matplotlib
+
+It is recommended to use a virtual environment (e.g., Conda).. A virtual environment manager such as [Conda](https://conda.io/projects/conda/en/latest/user-guide/getting-started.html) is recommended.
 
 Install dependencies:
 ```setup
