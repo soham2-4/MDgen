@@ -115,5 +115,20 @@ To get MFPT, go analysis fodler and run
 mfpt.py
 ```
 
-## Contributing
-All source code within this repository is licensed under the MIT License, please see the [LICENSE](LICENSE) file for more details.
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+<!-- CONTACT -->
+## Contact
+
+Your Name - Soham Choudhuri - soham.choudhuri@research.iiit.ac.in
+
+Project Link: [https://github.com/soham2-4/Malaria-Drug-Targets-finding-from-Single-Cell-Transcriptomics-and-genertaing-potential-drug-molecule/tree/main](https://github.com/soham2-4/Malaria-Drug-Targets-finding-from-Single-Cell-Transcriptomics-and-genertaing-potential-drug-molecule/tree/main)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
