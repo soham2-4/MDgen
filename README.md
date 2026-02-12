@@ -53,7 +53,7 @@ inference1.py or inference2.py → trajectory generation
 The workflow is similar across systems, with minor differences in file names and data formats.
 
 ## 1. P450 System
-Raw Data (distance0.xvg, distance1.xvg, distance2.xvg) contain MD trajectory distance measurements. These training data can be found in ''
+Raw Data (distance0.xvg, distance1.xvg, distance2.xvg) contain MD trajectory distance measurements. These training data can be found in 'data'.
 
 ## Workflow (P450)
 Step 1: data.py loads MD trajectories, adds small Gaussian noise and produces augmented synthetic trajectories data for training. 
@@ -65,7 +65,7 @@ Step 3: inference2.py generates future trajectory segments autoregressively, all
 ## 2 and 3. Toy 3-Well System and α-Synuclein (Asyn) System
 
 ## Data augmentation and Training
-Raw Data () training data can be found in ''.
+Raw Data (threewell.npy, asyn.npy) training data can be found in 'data'.
 
 To generate synthetic data, run:
 
