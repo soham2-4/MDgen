@@ -75,7 +75,7 @@ python data.py
 To train MDgen, run:
 
 ```
-python3 trans1.py
+python trans1.py
 ```
 
 ## Evaluation
