@@ -85,6 +85,7 @@ python inference1.py
 
 ## Evaluation (Kinetic Analysis)
 We have compared how the free energy surface, ITS, and CK-test are from generated data compared to training data for each system.
+
 To get FES, go analysis fodler and run 
 ```
 python FES.py
