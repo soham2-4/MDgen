@@ -8,6 +8,16 @@ Generation"**.
   <img src="architecture (1).png">
 </p>
 
+A Transformer-based autoregressive framework for learning and generating Molecular Dynamics (MD) trajectories. This project models long-range temporal dependencies in MD simulations and generates future trajectory segments conditioned on an initial fraction of the sequence.
+
+The framework currently supports three systems:
+
+1. Cytochrome P450 (P450)
+
+2. Toy 3-Well Potential System
+
+3. α-Synuclein (Asyn)
+
 ## Requirements
 
 HYDRA was developed using PyTorch 1.13.1 on Python 3.8.18 which remain the preferred versions to reproduce the code. A virtual environment manager such as [Conda](https://conda.io/projects/conda/en/latest/user-guide/getting-started.html) is recommended.
