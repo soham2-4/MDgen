@@ -62,16 +62,21 @@ Step 2: trans1.py trains our autoregressive Transformer model, which uses slidin
 
 Step 3: inference2.py generates future trajectory segments autoregressively, allowing modification of input conditioning percentage (e.g., first 10%)
 
-## Training
+## 2 and 3. Toy 3-Well System and α-Synuclein (Asyn) System
+
+## Data augmentation and Training
+Raw Data () training data can be found in ''.
+
+To generate synthetic data, run:
+
+```train
+python data.py
 
 To train MDgen, run:
 
 ```train
-python3 scripts/train.py configs/train.yml
+python3 trans1.py
 ```
-
-Optionally, you may specify the parameter `--num_gpus N` in order to perform multi-GPU training using the Distributed Data Parallel strategy.  
-The parameter `--ckpt` can be used to resume training from an existing checkpoint.
 
 ## Evaluation
 
