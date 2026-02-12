@@ -83,7 +83,7 @@ To do inference, run:
 python inference1.py
 ```
 
-## Evaluation
+## Evaluation (Kinetic Analysis)
 
 Evaluating MDgen must be done in two stages: 
 1. Sampling residues based on the target receptor.
