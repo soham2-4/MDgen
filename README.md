@@ -84,26 +84,35 @@ python inference1.py
 ```
 
 ## Evaluation (Kinetic Analysis)
-
-Evaluating MDgen must be done in two stages: 
-1. Sampling residues based on the target receptor.
-2. Reconstructing generated residues into peptides.
-
-### 1.1 Sampling for all receptors in the testset
-
-```eval
-python3 scripts/sample-testset.py configs/train.yml configs/sample.yml --out_dir ./outputs
+We have compared how the free energy surface, ITS, and CK-test are from generated data compared to training data for each system.
+To get FES, go analysis fodler and run 
+```
+python FES.py
+```
+To get MSM, go analysis fodler and run 
+```
+python build_msm.py
+```
+To get ITS, go analysis fodler and run 
+```
+python build_its_pyemma.py
+```
+To get CK-test, go analysis fodler and run 
 ```
 
-### 1.2 Sampling for a receptor from PDB
-
-```eval
-python3 scripts/sample-pdb.py data/pfemp1/PF3D71150400_MEDIUM.pdb configs/train.yml configs/sample.yml --out_dir ./outputs
+To get spectral analysis, go analysis fodler and run 
 ```
-
-### 2. Reconstructing sampled residues into peptides
-```eval
-python3 scripts/reconstruct.py ./outputs configs/reconstruct.yml
+spectral_analysis.py
+```
+python build_cktest_pyemma.py
+```
+To get PCCA, go analysis fodler and run 
+```
+python ASYN_PCCA_plot.py.py
+```
+To get MFPT, go analysis fodler and run 
+```
+mfpt.py
 ```
 
 ## Contributing
