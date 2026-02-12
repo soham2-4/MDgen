@@ -127,7 +127,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - Soham Choudhuri - choudhurisoham@gmail.com
+Name - Soham Choudhuri - choudhurisoham@gmail.com
 
 Project Link: [https://github.com/soham2-4/MDgen/tree/main)
 
