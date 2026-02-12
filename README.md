@@ -34,7 +34,9 @@ It is recommended to use a virtual environment (e.g., Conda).. A virtual environ
 
 ## Creat environment:
 conda create -n mdtraj python=3.8
+
 conda activate mdtraj
+
 pip install torch numpy matplotlib
 
 ## Project overview
@@ -50,18 +52,15 @@ inference1.py or inference2.py → trajectory generation
 
 The workflow is similar across systems, with minor differences in file names and data formats.
 
-## Pre-trained Model Checkpoint
+## 1. P450 System
+Raw Data (distance0.xvg, distance1.xvg, distance2.xvg) contain MD trajectory distance measurements. These training data can be found in ''
 
-You can download the model weights used in the paper [here](https://drive.google.com/drive/folders/1paFyU48Rn5DHEkmc9xUrPAvtHVfcXik5) for inference.
+## Workflow (P450)
+Step 1: data.py loads MD trajectories, adds small Gaussian noise and produces augmented synthetic trajectories data for training. 
 
-## Configuration
+Step 2: trans1.py trains our autoregressive Transformer model, which uses sliding-window sequence learning to learn long-range trajectory dependencies.
 
-Configuration management for MDgen is done through multiple .yml files located in the `configs/` directory.  
-- `train.yml` specifies the parameters for training the diffusion model along with path to the processed dataset.
-- `sample.yml` specifies parameters for sampling, including the number of peptides to sample for each target receptor and model weights to load.
-- `reconstruct.yml` specifies the reconstruction algorithm as well as its hyperparameters.
-
-These configurations might have to be modified to point to the dataset and checkpoint path on your system before proceeding with training and evaluation.
+Step 3: inference2.py generates future trajectory segments autoregressively, allowing modification of input conditioning percentage (e.g., first 10%)
 
 ## Training
 
