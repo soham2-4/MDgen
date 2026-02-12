@@ -5,7 +5,7 @@ Long-Range Molecular Dynamics Trajectory
 Generation"**.
 
 <p align="center">
-  <img src="architecture (1).png">
+  <img src="architecture (1).png" width="60%">
 </p>
 
 A Transformer-based autoregressive framework for learning and generating Molecular Dynamics (MD) trajectories. This project models long-range temporal dependencies in MD simulations and generates future trajectory segments conditioned on an initial fraction of the sequence.
