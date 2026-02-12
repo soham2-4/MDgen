@@ -72,10 +72,15 @@ To generate synthetic data, run:
 ```
 python data.py
 ```
-To train MDgen, run:
+To train, run:
 
 ```
 python trans1.py
+```
+To do inference, run:
+
+```
+python inference1.py
 ```
 
 ## Evaluation
