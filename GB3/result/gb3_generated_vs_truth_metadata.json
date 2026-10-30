@@ -1,0 +1,15 @@
+{
+  "observable": "N_Native_Contacts",
+  "n_frames": 44911,
+  "first_frame": 4990,
+  "last_frame": 49900,
+  "seeded_prefix_frames": 4990,
+  "prefix_note": "Frames 0..input_len-1 are the TRUE trajectory, supplied to the model as context. They are not included in these arrays.",
+  "truth_mean": 3290.7200017813007,
+  "truth_std": 106.98195604724427,
+  "generated_mean": 3291.5821350755214,
+  "generated_std": 107.67456157474038,
+  "per_frame_correlation": 0.9327406632123858,
+  "provenance": "Autoregressive rollout with cached decoding. The model was trained on a single MD trajectory duplicated 1000x with rounding-suppressed noise, so the training set contained one distinct sequence.",
+  "interpretation": "Per-frame correlation of 0.9327 indicates the model reproduces the training sequence rather than sampling independently from the equilibrium distribution. Agreement of the free-energy surface follows from this reconstruction and should not be read as validation of learned dynamics."
+}
